@@ -9,23 +9,23 @@ oneTimeSetUp() {
 }
 
 testIfNumber1() {
-  expected=$(_fizzbuzz 1)
-  assertEquals 1 "$expected"
+  input=$(_fizzbuzz 1)
+  assertEquals 1 "$input"
 }
 
 testIfNumber3() {
-  expected=$(_fizzbuzz 3)
-  assertEquals Fizz "$expected"
+  input=$(_fizzbuzz 3)
+  assertEquals Fizz "$input"
 }
 
 testIfNumber35() {
-  expected=$(_fizzbuzz 35)
-  assertEquals Buzz "$expected"
+  input=$(_fizzbuzz 35)
+  assertEquals Buzz "$input"
 }
 
 testIfNumber90() {
-  expected=$(_fizzbuzz 90)
-  assertEquals FizzBuzz "$expected"
+  input=$(_fizzbuzz 90)
+  assertEquals FizzBuzz "$input"
 }
 
 . /usr/bin/shunit2
