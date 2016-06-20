@@ -5,7 +5,7 @@
 #
 
 oneTimeSetUp() {
-  . ./fizzbuzz.sh
+  . ./fizzbuzz.sh &> /dev/null
 }
 
 testIfNumber1() {
